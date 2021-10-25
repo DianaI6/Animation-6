@@ -1,0 +1,84 @@
+.logo{
+    display: inline-block;
+    margin-right: 50px;
+}
+.navigation{
+    display: inline-block;
+}
+.nav-li{
+    display: inline-block;
+}
+.header-wraper{
+    background-color: pink;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+.body{
+    height: 1800px;
+    /* padding-top: 760px; */
+}
+.sect{
+    margin-top: 76px;  
+}
+.wrapper{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 2s; */
+    transition: all 2s linear 2s;
+}
+.chiled-box{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    transition: all 1s linear;
+}
+/* hover effects */
+.wrapper:hover{
+    background-color: green;
+}
+.chiled-box:hover{
+    width: 100px;
+    transform: rotate(0deg) translate(-50%,-50%);
+}
+/* .wrapper:hover .chiled-box{
+    background-color: darkorange;
+} */
+
+/* keyframe Animation */
+.animation-box{
+    position: relative;
+}
+.wrapper-2{
+    width: 500px;
+    height: 500px;
+    /* ვერ დავარეგულირე */
+    position: relative;
+    transition: all 2s linear 2s;
+}
+.animation{
+    height: 100px;
+    animation: my-animation 5s infinite;
+    position: absolute;
+    transform: rotate(360deg);
+    /* რატომ არ ბრუნავს? */
+}
+@keyframes my-animation{
+    0% {left: 0px; top: 200px;}
+    25% {left: 200px; top: 150px;}
+    50% {left: 400px; top: 50px;}
+    75% {left: 600px; top: 150px;}
+    100% {left: 800px; top: 200px;}
+}
