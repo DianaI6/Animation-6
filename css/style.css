@@ -7,6 +7,7 @@
 }
 .nav-li{
     display: inline-block;
+    margin-left: 15px;
 }
 .header-wraper{
     background-color: pink;
@@ -53,32 +54,31 @@
     width: 100px;
     transform: rotate(0deg) translate(-50%,-50%);
 }
-/* .wrapper:hover .chiled-box{
-    background-color: darkorange;
-} */
+
 
 /* keyframe Animation */
 .animation-box{
     position: relative;
+    max-width: 1000px;
+    width: 100%;
 }
 .wrapper-2{
     width: 500px;
     height: 500px;
     /* ვერ დავარეგულირე */
-    position: relative;
     transition: all 2s linear 2s;
 }
 .animation{
     height: 100px;
     animation: my-animation 5s infinite;
     position: absolute;
-    transform: rotate(360deg);
-    /* რატომ არ ბრუნავს? */
 }
 @keyframes my-animation{
-    0% {left: 0px; top: 200px;}
-    25% {left: 200px; top: 150px;}
-    50% {left: 400px; top: 50px;}
-    75% {left: 600px; top: 150px;}
-    100% {left: 800px; top: 200px;}
+    0% {left: 0px; top: 300px; transform: rotate(0deg);}
+    20% {left: 100px; top: 200px; transform: rotate(60deg);}
+    40% {left: 300px; top: 100px; transform: rotate(120deg);}
+    50% {left: 400px; top: 50px; transform: rotate(180deg);}
+    60% {left: 500px; top: 100px; transform: rotate(240deg);}
+    80% {left: 700px; top: 200px; transform: rotate(300deg);}
+    100% {left: 800px; top: 300px; transform: rotate(360deg);}
 }
