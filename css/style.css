@@ -25,6 +25,7 @@
 .sect{
     margin-top: 76px;  
 }
+
 .wrapper{
     width: 100px;
     height: 100px;
@@ -59,8 +60,8 @@
 /* keyframe Animation */
 .animation-box{
     position: relative;
-    max-width: 1000px;
-    width: 100%;
+    /* max-width: 1000px;
+    width: 100%; */
 }
 .wrapper-2{
     width: 500px;
@@ -74,11 +75,11 @@
     position: absolute;
 }
 @keyframes my-animation{
-    0% {left: 0px; top: 300px; transform: rotate(0deg);}
-    20% {left: 100px; top: 200px; transform: rotate(60deg);}
+    0% {left: 0px; top: 500px; transform: rotate(0deg);}
+    20% {left: 100px; top: 300px; transform: rotate(60deg);}
     40% {left: 300px; top: 100px; transform: rotate(120deg);}
     50% {left: 400px; top: 50px; transform: rotate(180deg);}
     60% {left: 500px; top: 100px; transform: rotate(240deg);}
-    80% {left: 700px; top: 200px; transform: rotate(300deg);}
-    100% {left: 800px; top: 300px; transform: rotate(360deg);}
+    80% {left: 700px; top: 300px; transform: rotate(300deg);}
+    100% {left: 800px; top: 500px; transform: rotate(360deg);}
 }
